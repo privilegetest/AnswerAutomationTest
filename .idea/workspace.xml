@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +25,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1X4mFa9PtymLzPkc82lctrZ4Bpn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,13 +37,31 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\AnswerAutomationTest\Resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.KeysTests">
+    <configuration name="KeysTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AnswerAutomationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herokuappTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="herokuappTests" />
+      <option name="MAIN_CLASS_NAME" value="herokuappTests.KeysTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AnswerAutomationTest" />
       <extension name="coverage">
@@ -59,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.KeysTests" />
         <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
@@ -81,21 +104,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1580316397762" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1580317531529">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1580318914962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580317531529" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1580317531529">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1580318914962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580317531529" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1580317531528">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1580318914962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580317531528" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1580317531529">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1580318914962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580317531529" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1580318895200">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580318895200" />
   </component>
 </project>
