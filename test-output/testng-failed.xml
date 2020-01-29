@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/HP/AnswerAutomationTest(failed)">
+    <classes>
+      <class name="herokuappTests.KeysTests">
+        <methods>
+          <include name="testPi"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- herokuappTests.KeysTests -->
+    </classes>
+  </test> <!-- C:/Users/HP/AnswerAutomationTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

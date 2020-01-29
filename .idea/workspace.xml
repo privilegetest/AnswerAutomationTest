@@ -34,17 +34,47 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\AnswerAutomationTest\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.KeysTests">
+  <component name="RunManager" selected="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml">
+    <configuration name="C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AnswerAutomationTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/HP/AnswerAutomationTest/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AnswerAutomationTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KeysTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AnswerAutomationTest" />
       <extension name="coverage">
@@ -79,8 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/testng.xml" />
+      <item itemvalue="TestNG.KeysTests" />
+      <item itemvalue="TestNG.LoginTests" />
+      <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" />
+        <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/testng.xml" />
         <item itemvalue="TestNG.KeysTests" />
         <item itemvalue="TestNG.LoginTests" />
       </list>
@@ -104,25 +142,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1580316397762" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1580318914962">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580322475810">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1580318914962">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580322475810" />
+    <state x="434" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580322447899">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1580318914962">
+    <state x="434" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580322447899" />
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1580322851019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1580318914962">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1580322851019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580318914962" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1580318895200">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1580322851019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580318895200" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1580322851019">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1580321077255">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580321077255" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580321123658">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580321123658" />
   </component>
 </project>

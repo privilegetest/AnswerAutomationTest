@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/AnswerAutomationTest">
+        <classes>
+            <class name="herokuappTests.KeysTests">
+                <methods>
+                    <include name="testBackspace"/>
+                    <include name="testPi"/>
+                </methods>
+            </class>
+            <class name="herokuappTests.LoginTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
