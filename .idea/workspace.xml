@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d80f540e-13d5-41bb-9933-9282ee451972" name="Default Changelist" comment="Updates to Framework and all testCases">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/TC001_LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/TC003_KeysTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d80f540e-13d5-41bb-9933-9282ee451972" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/Driver_Notes/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/Driver_Notes/credits.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/msedgedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/geckodriver-v0.26.0-win64/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/KeyPressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/KeyPressesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/SecureAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/SecureAreaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/KeysTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/LoginTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/KeyPressesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/KeyPressesPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/SecureAreaPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/SecureAreaPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/herokuappTests/BaseTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/KeysTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/LoginTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -197,6 +169,14 @@
       <option name="presentableId" value="Default" />
       <updated>1580313637366</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updates to Framework and all testCases">
+      <created>1580458970529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580458970529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,10 +200,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580322447899" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1580458735212">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1580458968857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580458735212" />
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580458968857" />
     <state x="463" y="82" key="FileChooserDialogImpl" timestamp="1580329933471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,10 +244,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580333145696" />
-    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580458952853">
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580458989578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1580458952853" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1580458989578" />
     <state x="379" y="0" width="607" height="728" key="find.popup" timestamp="1580333588605">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
