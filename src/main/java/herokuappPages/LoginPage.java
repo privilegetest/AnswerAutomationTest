@@ -28,9 +28,12 @@ public class LoginPage {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public SecureAreaPage clickLoginButton(){
+    public SecureAreaPage navigateToSecureArea(){
         driver.findElement(loginButton).click();
         return new SecureAreaPage(driver);
+    }
+    public void clickLoginButton(){
+        driver.findElement(loginButton).click();
     }
 
     public boolean LoginButtonstate() {
@@ -39,7 +42,6 @@ public class LoginPage {
     }
 
     public String getLoginStatusAlert() {
-        driver.findElement(loginButton).click();
         return driver.findElement(statusAlert).getText();
     }
 

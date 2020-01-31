@@ -11,7 +11,7 @@ public class SecureAreaPage {
 
     private WebDriver driver;
     private By statusAlert = By.id("flash");
-    private By logoutButton = By.cssSelector("#logout button");
+    private By logoutButton = By.cssSelector("#content div");
 
     public SecureAreaPage(WebDriver driver){
         this.driver = driver;

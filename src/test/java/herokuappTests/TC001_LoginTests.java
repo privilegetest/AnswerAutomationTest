@@ -17,42 +17,46 @@ public class TC001_LoginTests extends BaseTests {
     /*test to check wrong password+ correct username scenario*/
     @Test
     public void T1testUnsuccessfulLoginpword(){
-        LoginPage loginPage1 = homePage.clickFormAuthentication();
-        loginPage1.setUsername("tomsmith");
-        loginPage1.setPassword("wrongSecretPassword!");
-        String alertText1 = loginPage1.getLoginStatusAlert();
-        assertTrue(alertText1.contains("Your password is invalid!"),
+        LoginPage loginPage = homePage.clickFormAuthentication();
+        loginPage.setUsername("tomsmith");
+        loginPage.setPassword("wrongSecretPassword!");
+        loginPage.clickLoginButton();
+        String alertText = loginPage.getLoginStatusAlert();
+        assertTrue(alertText.contains("Your password is invalid!"),
                 "Alert text is incorrect");
     }
         /*checking wrong username+ correct password scenario*/
         @Test
         public void T2testUnsuccessfulLoginuname() {
-            LoginPage loginPage2 = homePage.clickFormAuthentication();
-            loginPage2.setUsername("tomsmith");
-            loginPage2.setPassword("wrongSecretPassword!");
-            String alertText2 = loginPage2.getLoginStatusAlert();
-            assertTrue(alertText2.contains("Your username is invalid!"),
+            LoginPage loginPage = homePage.clickFormAuthentication();
+            loginPage.setUsername("WRONGsmith");
+            loginPage.setPassword("wrongSecretPassword!");
+            loginPage.clickLoginButton();
+            String alertText = loginPage.getLoginStatusAlert();
+            assertTrue(alertText.contains("Your username is invalid!"),
                     "Alert text is incorrect");
         }
 
         /*checking wrong username+ wrong password scenario*/
             @Test
             public void T3testUnsuccessfulLogin() {
-                LoginPage loginPage3 = homePage.clickFormAuthentication();
-                loginPage3.setUsername("tomsmith");
-                loginPage3.setPassword("wrongSecretPassword!");
-                String alertText3 = loginPage3.getLoginStatusAlert();
-                assertTrue(alertText3.contains("Your username is invalid!"),
+                LoginPage loginPage = homePage.clickFormAuthentication();
+                loginPage.setUsername("wrongtomsmith");
+                loginPage.setPassword("wrongSecretPassword!");
+                loginPage.clickLoginButton();
+                String alertText = loginPage.getLoginStatusAlert();
+                assertTrue(alertText.contains("Your username is invalid!"),
                         "Alert text is incorrect");
             }
-            /*checking exception scenario*/
+            /*checking exception scenario- This test fails because button is always enabled,
+            * tes included to check failed test results*/
             @Test
             public void T4testUnsuccessfulLoginexception(){
-                LoginPage loginPage4 = homePage.clickFormAuthentication();
-                loginPage4.setUsername("");
-                loginPage4.setPassword("");
-                loginPage4.clickLoginButton();
-                assertFalse(loginPage4.LoginButtonstate(),
+                LoginPage loginPage = homePage.clickFormAuthentication();
+                loginPage.setUsername("");
+                loginPage.setPassword("");
+                loginPage.clickLoginButton();
+                assertFalse(loginPage.LoginButtonstate(),
                         "Login button should be disabled");
     }
     @Test
@@ -60,7 +64,7 @@ public class TC001_LoginTests extends BaseTests {
         LoginPage loginPage = homePage.clickFormAuthentication();
         loginPage.setUsername("tomsmith");
         loginPage.setPassword("SuperSecretPassword!");
-        SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
+        SecureAreaPage secureAreaPage = loginPage.navigateToSecureArea();
         assertTrue(secureAreaPage.getAlertText()
                         .contains("You logged into a secure area!"),
                 "Alert text is incorrect");

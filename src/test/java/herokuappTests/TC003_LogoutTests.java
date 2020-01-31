@@ -2,6 +2,7 @@ package herokuappTests;
 
 import herokuappPages.LoginPage;
 import herokuappPages.SecureAreaPage;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 import herokuappTests.BaseTests;
@@ -20,9 +21,10 @@ public class TC003_LogoutTests extends BaseTests {
             LoginPage loginPage = homePage.clickFormAuthentication();
             loginPage.setUsername("tomsmith");
             loginPage.setPassword("SuperSecretPassword!");
-            SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
-            LoginPage loginPage2 = secureAreaPage.clickLogoutButton();
-            assertTrue(loginPage2.getLoginStatusAlert().contains("You logged into a secure area!"),
+            SecureAreaPage secureAreaPage = loginPage.navigateToSecureArea();
+            secureAreaPage.clickLogoutButton();
+            String alertText = loginPage.getLoginStatusAlert();
+            assertTrue(alertText.contains("You logged into a secure area!"),
                     "Alert text is incorrect");
         }
 }
