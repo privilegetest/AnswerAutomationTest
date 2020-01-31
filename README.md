@@ -2,12 +2,17 @@
 
 #### Project Build environment
 
-Java: java version "13.0.2" 2020-01-14
-Java(TM) SE Runtime Environment (build 13.0.2+8)
-MAVEN: Apache Maven 3.6.3
-IntelliJ: IntelliJ IDEA comunity edition 2019.3.
-Chrome Browser: Version 79.0.3945.130 (Official Build) (64-bit)
-ChromeDriver: ChromeDriver 79.0.3945.36
+-Java: java version "13.0.2" 2020-01-14
+
+-Java(TM) SE Runtime Environment (build 13.0.2+8)
+
+-MAVEN: Apache Maven 3.6.3
+
+-IntelliJ: IntelliJ IDEA comunity edition 2019.3.
+
+-Chrome Browser: Version 79.0.3945.130 (Official Build) (64-bit)
+
+-ChromeDriver: ChromeDriver 79.0.3945.36
 
 ###### Coding Language and test framework
 Java, Selenium, TestNG
