@@ -18,7 +18,7 @@
 Java, Selenium, TestNG
 
 #### Test Cases
-Test Case Design patten followed is the Page Object Model
+Test Case Design pattern followed is the Page Object Model
 
 ###### TestCase1 tests
 Path to sourcecode with description of test methods and base classes: 
