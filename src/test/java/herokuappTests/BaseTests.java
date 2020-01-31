@@ -1,29 +1,41 @@
 package herokuappTests;
-/*
-           This class is used to set the assign login values and
-             assert if details match details registered to the user on Herokuapp site
-         */
+
+   /************************************************************
+This class contains functions common for all tests including setting browser Webdriver,
+    and launching home page,
+    and closing the browser
+     ************************************************************/
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import herokuappPages.HomePage;
+import org.testng.annotations.BeforeMethod;
+
+import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
-
     private WebDriver driver;
     protected HomePage homePage;
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        /*System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
 
+        homePage = new HomePage(driver);*/
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+        driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
+
     }
 
-    @AfterClass
+   @AfterMethod
     public void tearDown(){
         driver.quit();
     }

@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d80f540e-13d5-41bb-9933-9282ee451972" name="Default Changelist" comment="" />
+    <list default="true" id="d80f540e-13d5-41bb-9933-9282ee451972" name="Default Changelist" comment="Updates to Framework and all testCases">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/TC001_LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/TC003_KeysTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/Driver_Notes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/Driver_Notes/credits.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/edgedriver_win64/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/msedgedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/geckodriver-v0.26.0-win64/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/geckodriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/KeyPressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/KeyPressesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/herokuappPages/SecureAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herokuappPages/SecureAreaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/herokuappTests/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/KeysTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/herokuappTests/LoginTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/KeyPressesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/KeyPressesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/herokuappPages/SecureAreaPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/herokuappPages/SecureAreaPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/herokuappTests/BaseTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/KeysTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/herokuappTests/LoginTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AnswerAutomationTest" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,18 +67,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\AnswerAutomationTest\Resources" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\AnswerAutomationTest" />
+      <recent name="C:\Users\HP\AnswerAutomationTest\src\test\java\herokuappTests" />
+      <recent name="C:\Users\HP\AnswerAutomationTest\src\main\java" />
+      <recent name="C:\Users\HP\AnswerAutomationTest\src\main\AutomationTestFramework" />
+      <recent name="C:\Users\HP\AnswerAutomationTest\Resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/HP/AnswerAutomationTest/testng.xml">
     <configuration name="C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AnswerAutomationTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" />
@@ -75,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeysTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC001_LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AnswerAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -84,7 +126,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="herokuappTests" />
-      <option name="MAIN_CLASS_NAME" value="herokuappTests.KeysTests" />
+      <option name="MAIN_CLASS_NAME" value="herokuappTests.TC001_LoginTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -92,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC003_KeysTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AnswerAutomationTest" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +143,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="herokuappTests" />
-      <option name="MAIN_CLASS_NAME" value="herokuappTests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="herokuappTests.TC003_KeysTests" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC003_KeysTests.testPi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AnswerAutomationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herokuappTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="herokuappTests" />
+      <option name="MAIN_CLASS_NAME" value="herokuappTests.TC003_KeysTests" />
+      <option name="METHOD_NAME" value="testPi" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -111,16 +171,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/testng.xml" />
-      <item itemvalue="TestNG.KeysTests" />
-      <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" />
+      <item itemvalue="TestNG.TC001_LoginTests" />
+      <item itemvalue="TestNG.TC003_KeysTests" />
+      <item itemvalue="TestNG.TC003_KeysTests.testPi" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" />
         <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/testng.xml" />
-        <item itemvalue="TestNG.KeysTests" />
-        <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.TC001_LoginTests" />
+        <item itemvalue="TestNG.TC003_KeysTests.testPi" />
+        <item itemvalue="TestNG.TC003_KeysTests" />
+        <item itemvalue="TestNG.C:/Users/HP/AnswerAutomationTest/test-output/All Test Suite/testng-failed.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -137,42 +199,93 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updates to Framework and all testCases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to Framework and all testCases" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Project_Structure" timestamp="1580316397762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1580316397762" />
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580322475810">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580392500196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580322475810" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580392500196" />
+    <state x="432" y="201" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1580456550460">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="432" y="201" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.728@0.0.1366.728" timestamp="1580456550460" />
     <state x="434" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580322447899">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1580322447899" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1580322851019">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1580458735212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1580322851019">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580458735212" />
+    <state x="463" y="82" key="FileChooserDialogImpl" timestamp="1580329933471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1580322851019">
+    <state x="463" y="82" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580329933471" />
+    <state x="0" y="177" key="FileDocumentManager.FileCacheConflict" timestamp="1580456360220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1580322851019">
+    <state x="0" y="177" key="FileDocumentManager.FileCacheConflict/0.0.1366.728@0.0.1366.728" timestamp="1580456360220" />
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1580458735249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580322851019" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1580321077255">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580458735249" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1580458735249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580321077255" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580321123658">
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580458735249" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1580458735249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580321123658" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580458735249" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1580458735249">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580458735249" />
+    <state x="348" y="64" key="NewModule_or_Project.wizard" timestamp="1580329946381">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="64" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1580329946381" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1580392773045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580392773045" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580458917943">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580458917943" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580333145696">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580333145696" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580458952853">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1580458952853" />
+    <state x="379" y="0" width="607" height="728" key="find.popup" timestamp="1580333588605">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="0" width="607" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1580333588605" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580335807353">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580335807353" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/herokuappTests/TC003_KeysTests.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

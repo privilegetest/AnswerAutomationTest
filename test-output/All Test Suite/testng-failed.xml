@@ -3,13 +3,40 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="C:/Users/HP/AnswerAutomationTest(failed)">
     <classes>
-      <class name="herokuappTests.KeysTests">
+      <class name="herokuappTests.TC001_LoginTests">
         <methods>
-          <include name="testPi"/>
+          <include name="T2testUnsuccessfulLoginuname"/>
+          <include name="T3testUnsuccessfulLogin"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="T4testUnsuccessfulLoginexception"/>
+        </methods>
+      </class> <!-- herokuappTests.TC001_LoginTests -->
+      <class name="herokuappTests.TC003_KeysTests">
+        <methods>
+          <include name="T10test3KeyPress"/>
+          <include name="T11test4KeyPress"/>
+          <include name="T9test2KeyPress"/>
+          <include name="T8test1KeyPress"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- herokuappTests.KeysTests -->
+      </class> <!-- herokuappTests.TC003_KeysTests -->
+      <class name="herokuappTests.TC002_InfiniteScrollTests">
+        <methods>
+          <include name="T8ScrollDownInfiniteThenUpOne"/>
+          <include name="T7ScrollDownInfiniteThenBackToTop"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- herokuappTests.TC002_InfiniteScrollTests -->
+      <class name="herokuappTests.TC003_LogoutTests">
+        <methods>
+          <include name="T6testLogout"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- herokuappTests.TC003_LogoutTests -->
     </classes>
   </test> <!-- C:/Users/HP/AnswerAutomationTest(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
