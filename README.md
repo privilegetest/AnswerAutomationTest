@@ -54,9 +54,14 @@ Path to sourcecode with description of test methods and base classes:
 
 -T6testLogout
 
-####ToDo:
-Due to limited time the following could not be implemented,
+#### ToDo:
+
+Due to limited time the following features could not be implemented,
+
 Build on framework to manage execution flow and time using Selenium grid and TestNG
+
 Set up listeners for better execution flow reporting
+
 Separate test data inputs in an excel file
+
 Manage configuration items in a properties file
