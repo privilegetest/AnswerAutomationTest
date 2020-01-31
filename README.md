@@ -22,7 +22,9 @@ Path to sourcecode with description of test methods and base classes:
 --Test execution scenario names:
 
 -T1testUnsuccessfulLoginpword
+
 -T2testUnsuccessfulLoginuname
+
 -T5testSuccessfulLogin
 
 ###### TestCase2 tests
