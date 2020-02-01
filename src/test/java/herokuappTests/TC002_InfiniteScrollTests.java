@@ -17,19 +17,18 @@ public class TC002_InfiniteScrollTests extends BaseTests {
             int numScrollsDown = 2;
             InfiniteScrollPage scrollPage = homePage.clickInfiniteScroll();
             scrollPage.scrollToBottomOfPage(numScrollsDown);
-            scrollPage.scrollToTop();
+            scrollPage.scrollToTopofPage();
             assertTrue(scrollPage.getPageContentHeader().contains("Infinite Scroll"),
                     "Alert text is incorrect");
         }
         @Test
         public void T8ScrollDownInfiniteThenUpOne() {
             int numScrollsDown = 2;
-            Number vertical = 0;
             InfiniteScrollPage scrollPage = homePage.clickInfiniteScroll();
             scrollPage.scrollToBottomOfPage(numScrollsDown);
-            scrollPage.scrollByPixel(vertical, scrollPage.returnPreviousScrollHeights(numScrollsDown));
-
+            scrollPage.scrollBackUpOne(numScrollsDown);
+            assertTrue(scrollPage.getPageContentHeader().contains("Illum voluptatum"),
+                    "Alert text is incorrect");
             /*expected result will depend on browser set up when running test**/
-
         }
     }
