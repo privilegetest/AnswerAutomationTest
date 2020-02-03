@@ -1,7 +1,5 @@
-# Test Automation exercise
-
-#### Project Build environment
-
+Test Automation exercise
+Project Build environment
 -Java: java version "13.0.2" 2020-01-14
 
 -Java(TM) SE Runtime Environment (build 13.0.2+8)
@@ -14,15 +12,14 @@
 
 -ChromeDriver: ChromeDriver 79.0.3945.36
 
-###### Coding Language and test framework
+Coding Language and test framework
 Java, Selenium, TestNG
 
-#### Test Cases
+Test Cases
 Test Case Design pattern followed is the Page Object Model
 
-###### TestCase1 tests
-Path to sourcecode with description of test methods and base classes: 
-\AnswerAutomationTest\src\test\java\herokuappTests\TC001_LoginTests
+TestCase1 tests
+Path to sourcecode with description of test methods and base classes: \AnswerAutomationTest\src\test\java\herokuappTests\TC001_LoginTests
 
 --Test execution scenario names:
 
@@ -32,36 +29,22 @@ Path to sourcecode with description of test methods and base classes:
 
 -T5testSuccessfulLogin
 
-###### TestCase2 tests
-Path to sourcecode with description of test methods and base classes:
-\AnswerAutomationTest\src\test\java\herokuappTests\TC002_InfiniteScrollTests
+TestCase2 tests
+Path to sourcecode with description of test methods and base classes: \AnswerAutomationTest\src\test\java\herokuappTests\TC002_InfiniteScrollTests
 
 --Test execution scenario names:
 
 -T7ScrollDownInfiniteThenBackToTop
 
-###### TestCase3 tests
-Path to sourcecode with description of test methods and base classes:
- \AnswerAutomationTest\src\test\java\herokuappTests\TC003_KeysTests
+TestCase3 tests
+Path to sourcecode with description of test methods and base classes: \AnswerAutomationTest\src\test\java\herokuappTests\TC003_KeysTests
 
 --Test execution scenario names:
 
--T11test4KeyPress
+-T111test4KeyPress
 
 \AnswerAutomationTest\src\test\java\herokuappTests\TC003_LogoutTests
 
 --Test execution scenario names:
 
 -T6testLogout
-
-#### ToDo:
-
-Due to limited time the following features could not be implemented,
-
-Build on framework to manage execution flow and time using Selenium grid and TestNG
-
-Set up listeners for better execution flow reporting
-
-Separate test data inputs in an excel file
-
-Manage configuration items in a properties file
