@@ -2,11 +2,9 @@ package herokuappTests;
 
 import herokuappPages.LoginPage;
 import herokuappPages.SecureAreaPage;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
-import herokuappTests.BaseTests;
-import herokuappPages.HomePage;
+
 
 public class TC003_LogoutTests extends BaseTests {
     /************************************************************
@@ -14,17 +12,18 @@ public class TC003_LogoutTests extends BaseTests {
      and the correct alert is displayed on Herokuapp site,
      and displays the result
      ************************************************************/
+    private String correctUsername ="tomsmith";
+    private String correctPassword ="SuperSecretPassword!";
 
         /*checking wrong username+ correct password scenario*/
         @Test
         public void T6testLogout() {
-            LoginPage loginPage = homePage.clickFormAuthentication();
-            loginPage.setUsername("tomsmith");
-            loginPage.setPassword("SuperSecretPassword!");
-            SecureAreaPage secureAreaPage = loginPage.navigateToSecureArea();
-            secureAreaPage.clickLogoutButton();
-            String alertText = loginPage.getLoginStatusAlert();
-            assertTrue(alertText.contains("You logged into a secure area!"),
-                    "Alert text is incorrect");
+                LoginPage loginPage = homePage.clickFormAuthentication();
+                SecureAreaPage secureAreaPage = loginPage.navigateToSecureArea( correctUsername,correctPassword);
+                secureAreaPage.clickLogoutButton();
+                String alertText = loginPage.getLoginStatusAlert();
+                assertTrue(alertText.contains("You logged into a secure area!"),
+                        "Alert text is incorrect");
         }
+
 }

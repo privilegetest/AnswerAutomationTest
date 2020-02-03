@@ -4,16 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-public class InfiniteScrollPage<scrollHeightsArray> {
+public class InfiniteScrollPage
+{
     /************************************************************
      This class acts as interface to InfiniteScrollPage object,
      and contains elements and methods used to interact with the web elements
      ************************************************************/
 
     private WebDriver driver;
-    private By textBlocks = By.className("jscroll-added");
-    private By lnfiniteScrollText = new By.ByTagName("H3");
-    long[] scrollHeightsArray;
+    private By lnfiniteScrollText = By.cssSelector("#content div");
+    private Number requiredHeight;
+    private Number[] scrollHeightsArray;
 
     public InfiniteScrollPage(WebDriver driver) {
         this.driver = driver;
@@ -23,18 +24,19 @@ public class InfiniteScrollPage<scrollHeightsArray> {
         return driver.findElement(lnfiniteScrollText).getText();
     }
 
-    public void scrollToBottomOfPage(int numScrollsDown) {
+    public void scrollToBottomOfPage(int numScrollsToBottomOfPage) {
         /****This method uses javascript to determine scroll down pages,
          and method accept the number of page scrolls required as input***/
+
         var jsExecutor = (JavascriptExecutor) driver;
             try {
-                long lastHeight = (long) (jsExecutor).executeScript("return document.body.scrollHeight");
+                Number lastHeight = (Number) (jsExecutor).executeScript("return document.body.scrollHeight");
                 int i = 0;
-                while (i<numScrollsDown) {
+                while (i<numScrollsToBottomOfPage) {
                     String script = "window.scrollTo(0, document.body.scrollHeight)";
                     (jsExecutor).executeScript(script);
                     Thread.sleep(2000);
-                    long newHeight = (long) (jsExecutor).executeScript("return document.body.scrollHeight");
+                    Number newHeight = (Number) (jsExecutor).executeScript("return document.body.scrollHeight");
                     if (newHeight == lastHeight) {
                         break;
                     }
@@ -45,21 +47,26 @@ public class InfiniteScrollPage<scrollHeightsArray> {
                 e.printStackTrace();
             }
     }
+    public void scrollToTopofPage() {
+        /****This scroll back to top of page***/
+        var jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("window.scrollBy(0,0)");
+    }
 
-
-    public long returnPreviousScrollHeights(int numScrollsDown) {
+    public Number returnRequiredScrollHeight(int numScrollsDown, int numScrollsUp) {
         /****This method determines what the previous page height value was,
         and this can be used by a method to navigate one page back up***/
+
         var jsExecutor = (JavascriptExecutor) driver;
         try {
-            long lastHeight = (long) (jsExecutor).executeScript("return document.body.scrollHeight");
+            Number lastHeight = (Number) (jsExecutor).executeScript("return document.body.scrollHeight");
             int i = 0;
-            scrollHeightsArray = new long[numScrollsDown];
+            scrollHeightsArray = new Number[numScrollsDown];
             while (i<numScrollsDown) {
                 String script = "window.scrollTo(0, document.body.scrollHeight)";
                 (jsExecutor).executeScript(script);
                 Thread.sleep(2000);
-                long newHeight = (long) (jsExecutor).executeScript("return document.body.scrollHeight");
+                Number newHeight = (Number) (jsExecutor).executeScript("return document.body.scrollHeight");
                 if (newHeight == lastHeight) {
                     break;
                 }
@@ -70,11 +77,15 @@ public class InfiniteScrollPage<scrollHeightsArray> {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-       return scrollHeightsArray[numScrollsDown-1];
+        requiredHeight = scrollHeightsArray[numScrollsDown-numScrollsUp];
+        return  requiredHeight;
     }
-    public void ScrollbyPixel(long horizontal,long vertical) {
+
+    public void scrollBackUp(int numScrollsDown, int numScrollsUp){
         var jsExecutor = (JavascriptExecutor) driver;
-           jsExecutor.executeScript("window.scrollBy(horizontal,vertical)");
-        }
+        Number requiredHeight = returnRequiredScrollHeight(numScrollsDown,numScrollsUp);
+        jsExecutor.executeScript("window.scrollBy(0,arguments[0])",requiredHeight);
+    }
+
 }
 

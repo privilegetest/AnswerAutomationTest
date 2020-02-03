@@ -6,48 +6,27 @@ package herokuappTests;
  and displays the result
  ************************************************************/
 
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
-import herokuappTests.BaseTests;
-import java.util.Map;
-import static org.testng.Assert.assertEquals;
+import org.testng.asserts.SoftAssert;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TC003_KeysTests extends BaseTests {
-    @Test
-    public void T8test1KeyPress(){
-        var keyPage = homePage.clickKeyPresses();
-        keyPage.enterText("A");
-        assertEquals(keyPage.getResult(), "You entered: A");
-    }
-    @Test
-    public void T9test2KeyPress() {
-        var keyPage = homePage.clickKeyPresses();
-        keyPage.enterText("A");
-        assertEquals(keyPage.getResult(), "You entered: A");
-        keyPage.enterText("b");
-        assertEquals(keyPage.getResult(), "You entered: B");
-    }
-    @Test
-        public void T10test3KeyPress(){
-            var keyPage = homePage.clickKeyPresses();
-            keyPage.enterText("A");
-            assertEquals(keyPage.getResult(), "You entered: A");
-            keyPage.enterText("b");
-            assertEquals(keyPage.getResult(), "You entered: B");
-            keyPage.enterText("%");
-            assertEquals(keyPage.getResult(), "You entered: %");
-        }
-    @Test
-        public void T11test4KeyPress(){
-            var keyPage = homePage.clickKeyPresses();
-            keyPage.enterText("A");
-            assertEquals(keyPage.getResult(), "You entered: A");
-            keyPage.enterText("b");
-            assertEquals(keyPage.getResult(), "You entered: B");
-            keyPage.enterText("%");
-            assertEquals(keyPage.getResult(), "You entered: %");
-            keyPage.enterText("9");
-            assertEquals(keyPage.getResult(), "You entered: 9");
-        }
+    private SoftAssert softAssert = new SoftAssert();
 
+    @Test
+    public void T111testKeyPresses() {
+        ArrayList<String> testDataInputArray = new ArrayList<>(Arrays.asList("C", "X", "g", "b"));
+        ArrayList<String> testDataResultArray = new ArrayList<>(Arrays.asList());
+        var keyPage = homePage.clickKeyPresses();
+        for (int arrayIndexLocationInt = 0; arrayIndexLocationInt < testDataInputArray.size(); arrayIndexLocationInt++) {
+            keyPage.enterText(testDataInputArray.get(arrayIndexLocationInt));
+            keyPage.getResult();
+            testDataResultArray.add(arrayIndexLocationInt, keyPage.getResult());
+                softAssert.assertEquals(testDataResultArray.get(arrayIndexLocationInt), "You entered: " + testDataInputArray.get(arrayIndexLocationInt), "Input result incorrect for text entry " + testDataInputArray.get(arrayIndexLocationInt));
+                System.out.println("case " + arrayIndexLocationInt + " completed");
+                softAssert.assertAll();
+
+        }
     }
+}

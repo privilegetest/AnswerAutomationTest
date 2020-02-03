@@ -1,7 +1,7 @@
 package herokuappTests;
+
 import herokuappPages.InfiniteScrollPage;
 import org.testng.annotations.Test;
-import herokuappTests.BaseTests;
 
 import static org.testng.Assert.assertTrue;
 
@@ -12,21 +12,22 @@ public class TC002_InfiniteScrollTests extends BaseTests {
          asserts if paragraph details in view match paragraph details stored at that index location in Herokuapp site
          and displays the result
          ************************************************************/
+       private int numScrollsToBottomOfPage = 2;
+        private int numScrollsDown = 3;
+        private int numScrollsUp = 1;
         @Test
         public void T7ScrollDownInfiniteThenBackToTop() {
-            int numScrollsDown = 2;
             InfiniteScrollPage scrollPage = homePage.clickInfiniteScroll();
-            scrollPage.scrollToBottomOfPage(numScrollsDown);
+            scrollPage.scrollToBottomOfPage(numScrollsToBottomOfPage);
             scrollPage.scrollToTopofPage();
             assertTrue(scrollPage.getPageContentHeader().contains("Infinite Scroll"),
                     "Alert text is incorrect");
         }
         @Test
-        public void T8ScrollDownInfiniteThenUpOne() {
-            int numScrollsDown = 2;
+        public void T8ScrollDownThenUp() {
             InfiniteScrollPage scrollPage = homePage.clickInfiniteScroll();
             scrollPage.scrollToBottomOfPage(numScrollsDown);
-            scrollPage.scrollBackUpOne(numScrollsDown);
+            scrollPage.scrollBackUp(numScrollsDown,numScrollsUp);
             assertTrue(scrollPage.getPageContentHeader().contains("Illum voluptatum"),
                     "Alert text is incorrect");
             /*expected result will depend on browser set up when running test**/

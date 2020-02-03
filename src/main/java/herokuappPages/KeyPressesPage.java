@@ -1,11 +1,11 @@
 package herokuappPages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.ArrayList;
 
 public class KeyPressesPage {
     /************************************************************
@@ -16,7 +16,6 @@ public class KeyPressesPage {
     private WebDriver driver;
     private By inputField = By.id("target");
     private By resultText = By.id("result");
-    private Actions actions = new Actions((driver));
 
     public KeyPressesPage(WebDriver driver) {
         this.driver = driver;
@@ -24,25 +23,24 @@ public class KeyPressesPage {
 
     public void enterText(String text) {
         driver.findElement(inputField).sendKeys(text);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.textToBePresentInElementValue(inputField, text));
     }
 
-       public String getResult() {
+    public void enterText(int arrayIndexLocationInt, ArrayList<String> keyPressesInputArray) {
+        enterText(keyPressesInputArray.get(arrayIndexLocationInt));
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.textToBePresentInElementValue(inputField, keyPressesInputArray.get(arrayIndexLocationInt)));
+    }
+    public String getResult() {
         return driver.findElement(resultText).getText();
     }
 
+    public String getResult(int arrayIndexNumber, ArrayList<String> keyPressesResultArray) {
 
-    /*-----ignore methods not in use yet-----
-    public void useShiftForUpperCase(){
-        driver.findElement(inputField);
-        actions.keyDown((WebElement) inputField,Keys.SHIFT).sendKeys("tc").keyUp(Keys.SHIFT);
-
+        keyPressesResultArray.set(arrayIndexNumber,getResult());
+        return keyPressesResultArray.get(arrayIndexNumber);
     }
-    public void clearText(){
-        driver.findElement(inputField).sendKeys(Keys.chord(Keys.CONTROL, "a"), "55");}
 
-    public void enterPi(){
-        driver.findElement(inputField);
-        enterText(Keys.chord(Keys.ALT, "p") + "=3.14");
-}*/
 }
 

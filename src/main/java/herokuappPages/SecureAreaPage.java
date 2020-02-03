@@ -17,7 +17,7 @@ public class SecureAreaPage {
         this.driver = driver;
     }
 
-    public String getAlertText(){
+    public String getSecureAreaAlertText(){
         return driver.findElement(statusAlert).getText();
     }
     public LoginPage clickLogoutButton(){

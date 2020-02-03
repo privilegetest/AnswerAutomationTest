@@ -28,29 +28,24 @@ public class LoginPage {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public SecureAreaPage navigateToSecureArea(){
-        driver.findElement(loginButton).click();
-        return new SecureAreaPage(driver);
-    }
     public void clickLoginButton(){
         driver.findElement(loginButton).click();
     }
 
-    public boolean LoginButtonstate() {
-       Boolean buttonstate =  driver.findElement(loginButton).isEnabled();
-        return buttonstate;
-    }
+    public void loginToSecureArea(String username,String password) {
+        setUsername(username);
+        setPassword(password);
+        clickLoginButton();
+         }
+
+    public SecureAreaPage navigateToSecureArea(String username,String password) {
+        setUsername(username);
+        setPassword(password);
+        clickLoginButton();
+        return new SecureAreaPage(driver); }
 
     public String getLoginStatusAlert() {
         return driver.findElement(statusAlert).getText();
     }
-
-    /* ----ignore methods not in use yet-----
-    public void clearUsername(){
-        driver.findElement(passwordField).sendKeys(Keys.chord(Keys.CONTROL, "a"), "55");
-    }
-    public void clearPassword(){
-        driver.findElement(passwordField).sendKeys(Keys.chord(Keys.CONTROL, "a"), "55");
-    }*/
 
 }
