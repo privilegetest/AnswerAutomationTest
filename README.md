@@ -1,5 +1,6 @@
-Test Automation exercise
-Project Build environment
+***Test Automation exercise
+Project Build environment***
+
 -Java: java version "13.0.2" 2020-01-14
 
 -Java(TM) SE Runtime Environment (build 13.0.2+8)
