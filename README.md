@@ -13,10 +13,12 @@ Project Build environment***
 
 -ChromeDriver: ChromeDriver 79.0.3945.36
 
-Coding Language and test framework
+***Coding Language and test framework***
+
 Java, Selenium, TestNG
 
-Test Cases
+***Test Cases***
+
 Test Case Design pattern followed is the Page Object Model
 
 TestCase1 tests
